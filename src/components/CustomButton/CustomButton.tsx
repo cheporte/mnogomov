@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './CustomButton.module.scss';
+import './CustomButton.sass';
 import classNames from 'classnames';
 
 type ButtonProps = {
@@ -20,9 +20,9 @@ const CustomButton: React.FC<ButtonProps> = ({
     className
 }) => {
     const btnClass = classNames(
-            styles.button,
-            styles[variant],
-            styles[size],
+            'button',
+            variant,
+            size,
             className
         );
 

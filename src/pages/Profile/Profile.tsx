@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Profile.module.scss";
+import "./Profile.sass";
 
-import CustomButton from "../../components/CustomButton/CustomButton";
+import CustomButton from "@components/CustomButton";
 import { Link } from "react-router-dom";
 
 type ProfileProps = {
@@ -12,30 +12,30 @@ type ProfileProps = {
 
 const Profile: React.FC<ProfileProps> = ({ userName, learningLang, progress }) => {
   return (
-    <div className={styles.profile}>
+    <div className='profile'>
         <Link to="/">
-            <CustomButton className={styles.backBtn} variant="ghost" size="lg">Back</CustomButton>
+            <CustomButton className='backBtn' variant="ghost" size="lg">Back</CustomButton>
         </Link>
-      <div className={styles.profileContent}>
-        <h1 className={styles.title}>Your Profile</h1>
-        <div className={styles.details}>
-          <img className={styles.profilePic} src="/mnogomov-logo.png" alt="Profile Picture" />
-          <div className={styles.detail}>
-            <span className={styles.label}>Name:</span>
-            <span className={styles.value}>{userName}</span>
+      <div className='profileContent'>
+        <h1 className='title'>Your Profile</h1>
+        <div className='details'>
+          <img className='profilePic' src="/mnogomov-logo.png" alt="Profile Picture" />
+          <div className='detail'>
+            <span className='label'>Name:</span>
+            <span className='value'>{userName}</span>
           </div>
-          <div className={styles.detail}>
-            <span className={styles.label}>Learning:</span>
-            <span className={styles.value}>{learningLang}</span>
+          <div className='detail'>
+            <span className='label'>Learning:</span>
+            <span className='value'>{learningLang}</span>
           </div>
-          <div className={styles.detail}>
-            <span className={styles.label}>Progress:</span>
-            <span className={styles.value}>{progress}%</span>
+          <div className='detail'>
+            <span className='label'>Progress:</span>
+            <span className='value'>{progress}%</span>
           </div>
         </div>
-        <button className={styles.editButton}>Change Image</button>
-        <button className={styles.editButton}>Change Username</button>
-        <button className={styles.editButton}>App Settings</button>
+        <button className='editButton'>Change Image</button>
+        <button className='editButton'>Change Username</button>
+        <button className='editButton'>App Settings</button>
       </div>
     </div>
   );

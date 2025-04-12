@@ -1,6 +1,6 @@
-import styles from './Toolbar.module.scss';
+import './Toolbar.sass';
 
-import CustomButton from '../../components/CustomButton/CustomButton.tsx';
+import CustomButton from '@components/CustomButton';
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -15,8 +15,8 @@ const Toolbar = () => {
     const [selectedLanguage, setSelectedLanguage] = useState(availableLanguages[0].code);
 
     return (
-        <nav className={styles.toolbar}>
-            <div className={styles.langSwitcher}>
+        <nav className='toolbar'>
+            <div className='langSwitcher'>
                 <label>Learning:</label>
                 <select
                     value={selectedLanguage}
@@ -29,7 +29,7 @@ const Toolbar = () => {
                     ))}
                 </select>
             </div>
-            <div className={styles.toolbarOptions}>
+            <div className='toolbarOptions'>
                 <Link to="/words">
                     <CustomButton variant="primary" size="lg">Words Book</CustomButton>
                 </Link>

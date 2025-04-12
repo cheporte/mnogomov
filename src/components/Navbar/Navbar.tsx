@@ -1,13 +1,13 @@
-import styles from './Navbar.module.scss';
+import './Navbar.sass';
 
 import { Link } from 'react-router-dom';
 
-import CustomButton from '../../components/CustomButton/CustomButton.tsx';
+import CustomButton from '@components/CustomButton';
 
 const Navbar = () => {
     return (
-        <header className={styles.header}>
-            <img className={styles.logo} src="/mnogomov-logo.png" alt="Site Logo" />
+        <header className='header'>
+            <img className='logo' src="/mnogomov-logo.png" alt="Site Logo" />
             <nav>
                 <Link to="/learn">
                     <CustomButton variant="primary" size="lg">Learn</CustomButton>

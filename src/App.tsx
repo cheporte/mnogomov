@@ -1,9 +1,10 @@
-import './App.scss'
+import './app.sass'
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import NotFoundPage from "./pages/NotFoundPage/NotFoundPage.tsx";
-import Home from "./pages/Home/Home.tsx";
-import Profile from "./pages/Profile/Profile.tsx";
+
+import NotFoundPage from "@pages/NotFoundPage";
+import Home from "@pages/Home";
+import Profile from "@pages/Profile";
 
 function App() {
   return (

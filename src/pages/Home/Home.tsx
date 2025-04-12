@@ -1,23 +1,23 @@
-import styles from './Home.module.scss';
+import './Home.sass';
 
-import Navbar from '../../components/Navbar/Navbar.tsx';
-import Toolbar from '../../components/Toolbar/Toolbar.tsx';
-import LessonModule from '../../components/LessonModule/LessonModule.tsx';
+import Navbar from '@components/Navbar';
+import Toolbar from '@components/Toolbar';
+import LessonModule from '@components/LessonModule';
 
 const Home = () => {
     return (
-        <div className={styles.home}>
-            <div className={styles.navbar}>
+        <div className='home'>
+            <div className='navbar'>
                 <Navbar></Navbar>
             </div>
 
-            <div className={styles.content}>
+            <div className='content'>
                 <LessonModule />
                 <LessonModule />
                 <LessonModule />
             </div>
 
-            <div className={styles.toolbar}>
+            <div className='toolbar'>
                 <Toolbar />
             </div>
         </div>
