@@ -1,0 +1,52 @@
+.toolbar {
+    position: fixed;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #89a8b2;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+
+    padding: 2rem 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+
+    max-width: 20rem;
+    height: 100vh;
+
+    .langSwitcher {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 600;
+        color: #89a8b2;
+        gap: 0.4rem;
+
+        label {
+          font-size: 0.9rem;
+        }
+
+        select {
+          padding: 0.4rem 0.6rem;
+          border-radius: 6px;
+          border: 1px solid #b3c8cf;
+          font-size: 1.5rem;
+          background-color: #fff;
+          color: #333;
+          cursor: pointer;
+          font-family: 'Barlow', sans-serif;
+
+          &:hover {
+            background-color: #f1f0e8;
+          }
+        }
+      }
+
+    .toolbarOptions {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
