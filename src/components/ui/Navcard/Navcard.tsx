@@ -13,9 +13,9 @@ const Navcard: React.FC<NavcardProprs> = ({
 }) => {
     return (
         <div className="navcard">
-            <div className="navcard__element">
-                <Link to={redirectTo}>{title}</Link>
-            </div>
+            <Link to={redirectTo}>
+                <div className="navcard__element">{title}</div>
+            </Link>
         </div>
     );
 }

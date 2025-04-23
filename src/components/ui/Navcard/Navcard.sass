@@ -6,7 +6,15 @@
     align-items: center
     margin: 10px
 
+    a
+        color: white
+        text-decoration: none
+        font-size: 1.5rem
+        position: relative
+        z-index: 2
+
     &__element
+        padding: 0 20px
         width: 250px
         height: 100px
         background: $amethyst-dream
@@ -16,31 +24,24 @@
         position: relative
         border-radius: 50px
         overflow: hidden
-        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)
-
-        a
-            color: white
-            text-decoration: none
-            font-size: 1.5rem
-            position: relative
-            z-index: 2
+        transition: all 0.6s ease
     
     &__element::before
         content: ''
         position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        background: conic-gradient($cotton-candy 0deg, $lavender-bliss 120deg, $cotton-candy 240deg)
+        top: -50%
+        left: -50%
+        width: 200%
+        height: 200%
+        background: linear-gradient(0deg, transparent, transparent 30%, rgba(187, 0, 255, 0.3))
         transition: all 0.6s ease
         opacity: 0
-        transform: scale(0)
+        transform: rotate(-45deg)
     
     &__element:hover
-        border-radius: 10px
-        transform: rotate(15deg)
+        box-shadow: 0 0 20px rgba(162, 0, 255, 0.5);
+        transform: scale(1.05)
     
     &__element:hover::before
-        opacity: 0.5
-        transform: scale(2)
+        opacity: 1
+        transform: rotate(-45deg) translateY(110%)
