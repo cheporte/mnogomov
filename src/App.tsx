@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthPage from "./pages/AuthPage";
 
 import Home from "./pages/Home";
+import FlashcardsPage from "./pages/FlashcardsPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/register" element={<AuthPage authType='signup' />}/>
 
         <Route path="/" element={<Home />}/>
+        <Route path="/flashcards/:lang" element={<FlashcardsPage />}/>
       </Routes>
     </Router>
   );

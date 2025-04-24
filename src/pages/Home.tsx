@@ -14,6 +14,7 @@ const Home: React.FC = () => {
             <Hero />
             <section className='lang-highlight'>
                 <h2 className="section-title">Discover New Horizons</h2>
+                <p className="section-description">Click on a card to choose a language</p>
                 <div className="lang-highlight__options">
                     <div onClick={() => {setSelectedLang('fr')}}>
                         <HighlightCard title="French" description="When you feel romantic" />
