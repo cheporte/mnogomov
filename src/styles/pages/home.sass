@@ -1,4 +1,5 @@
 @use '../variables' as *
+@use '../_mixins' as *
 
 #home-page
     display: flex
@@ -8,10 +9,10 @@
 
     section
         margin-top: 15px
-    
+
     .section-title
         color: $royal-indigo
-    
+
     .section-description
         color: $amethyst-dream
         text-align: center
@@ -25,8 +26,34 @@
 
         &__options
             display: flex
+            gap: 1rem
+
+            +respond-to(phone)
+                flex-direction: column
+                gap: 0.5rem
+    
+            +respond-to(tablet)
+                flex-direction: column
 
     &__navigation
         display: flex
         flex-direction: column
         align-items: center
+
+        +respond-to(phone)
+            padding: 1rem
+    
+    .navigation-options
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 1rem
+        margin-top: 1rem
+
+        +respond-to(phone)
+            flex-direction: column
+            padding: 1rem
+        
+        +respond-to(tablet)
+            gap: 0.75rem
+            justify-content: center

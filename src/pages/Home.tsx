@@ -30,7 +30,7 @@ const Home: React.FC = () => {
             
             <section className='home-page__navigation'>
                 <h2 className="section-title">Choose Your Way Of Studying</h2>
-                <div className='home-page__navigation-options'>
+                <div className='navigation-options'>
                     <Navcard title="Extend Dictionary" redirectTo={`/dict/${selectedLang}`}/>
                     <Navcard title="Master Flashcards" redirectTo={`/flashcards/${selectedLang}`}/>
                     <Navcard title="Read Texts" redirectTo={`/reading/${selectedLang}`}/>
