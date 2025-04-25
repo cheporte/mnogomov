@@ -7,7 +7,7 @@ import Navcard from "../components/ui/Navcard/Navcard";
 import HighlightCard from "../components/ui/HighlightCard";
 
 const Home: React.FC = () => {
-    const [selectedLang, setSelectedLang] = useState('')
+    const [selectedLang, setSelectedLang] = useState('fr')
     
     return (
         <div id='home-page'>
@@ -17,7 +17,7 @@ const Home: React.FC = () => {
                 <p className="section-description">Click on a card to choose a language</p>
                 <div className="lang-highlight__options">
                     <div onClick={() => {setSelectedLang('fr')}}>
-                        <HighlightCard title="French" description="When you feel romantic" />
+                        <HighlightCard title="French (default)" description="When you feel romantic" />
                     </div>
                     <div onClick={() => {setSelectedLang('jp')}}>
                         <HighlightCard title="Japanese" description="Something cute? UwU" />
