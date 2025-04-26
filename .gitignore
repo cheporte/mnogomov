@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 frontend/package-lock.json
+backend/venv
+backend/__pycache__
