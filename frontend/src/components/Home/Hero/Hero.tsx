@@ -1,13 +1,17 @@
 import React from "react";
 
 import './Hero.sass';
+import Button from "../../ui/Button";
 
 const Hero: React.FC = () => {
     return (
-        <div id='hero'>
-            <img src="/mnogomov-night.svg" alt="Site Logo" />
-            <h1>Welcome to Mnogomov!</h1>
-            <p>We're glad to see you surfing the world of languages. Let us help you on this fantastic journey!</p>
+        <div className='hero'>
+            <img className="hero__logo" src="/mnogomov-night.svg" alt="Site Logo" />
+            <div className="hero__content">
+                <h1 className="hero__content__title">Unlock the World with Mnogomov!</h1>
+                <p className="hero__content__subtitle">Dive into a new language and explore endless possibilities. Your journey to fluency starts here!</p>
+                <Button variant="primary" size="lg" aria-label="Start Your Journey!">Start Your Journey!</Button>
+            </div>
         </div>
     );
 }
