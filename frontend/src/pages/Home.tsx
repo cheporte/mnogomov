@@ -5,6 +5,7 @@ import '../styles/pages/home.sass';
 import Hero from "../components/Home/Hero";
 import Features from "../components/Home/Features";
 import HowItWorks from "../components/Home/HowItWorks";
+import Testimonials from "../components/Home/Testimonials";
 
 const Home: React.FC = () => {    
     return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
             <Hero />
             <Features />
             <HowItWorks />
+            <Testimonials />
         </div>
     );
 }
