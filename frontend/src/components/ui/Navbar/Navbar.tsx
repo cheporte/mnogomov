@@ -7,22 +7,22 @@ const Navbar: React.FC = () => {
     return (
         <nav className="navbar">
             <div className="navbar__container">
-                <Link to="/courses">
+                <Link to="/mnogomov/courses">
                     <Button variant="primary" size="md">Courses</Button>
                 </Link>
-                <Link to="/flashcards">
+                <Link to="/mnogomov/flashcards">
                     <Button variant="primary" size="md">Flashcards</Button>
                 </Link>
-                <Link to="/dictionary">
+                <Link to="/mnogomov/dictionary">
                     <Button variant="primary" size="md">Dictionary</Button>
                 </Link>
-                <Link to="/texts">
+                <Link to="/mnogomov/texts">
                     <Button variant="primary" size="md">Texts</Button>
                 </Link>
-                <Link to="/media">
+                <Link to="/mnogomov/media">
                     <Button variant="primary" size="md">Media</Button>
                 </Link>
-                <Link to="/about">
+                <Link to="/mnogomov/about">
                     <Button variant="primary" size="md">About</Button>
                 </Link>
             </div>

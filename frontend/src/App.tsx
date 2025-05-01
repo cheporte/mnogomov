@@ -10,13 +10,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="*" element={<AuthPage authType="login" />} />
-        <Route path="/login" element={<AuthPage authType="login" />} />
-        <Route path="/register" element={<AuthPage authType="signup" />} />
+        <Route path="/mnogomov/*" element={<AuthPage authType="login" />} />
+        <Route path="/mnogomov/login" element={<AuthPage authType="login" />} />
+        <Route path="/mnogomov/register" element={<AuthPage authType="signup" />} />
 
-        <Route path="/" element={<Home />} />
-        <Route path="/flashcards/:lang" element={<FlashcardsPage />} />
-        <Route path="/dict/:lang" element={<DictionaryPage />} />
+        <Route path="/mnogomov" element={<Home />} />
+        <Route path="/mnogomov/flashcards/:lang" element={<FlashcardsPage />} />
+        <Route path="/mnogomov/dict/:lang" element={<DictionaryPage />} />
       </Routes>
     </Router>
   );
