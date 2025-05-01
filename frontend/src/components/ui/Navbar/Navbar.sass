@@ -1,0 +1,29 @@
+@use '../../../styles/variables' as *
+@use '../../../styles/mixins' as *
+
+.navbar
+    background-color: $royal-indigo
+    padding: 1rem 2rem
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    width: 100%
+
+    &__container
+        display: flex
+        gap: 1rem
+
+    button
+        background-color: $amethyst-dream
+        color: #fff
+        border: none
+        padding: 0.5rem 1rem
+        border-radius: 5px
+        cursor: pointer
+        transition: background-color 0.3s ease
+
+        &:hover
+            background-color: $lavender-bliss
+
+        &:active
+            background-color: $cotton-candy

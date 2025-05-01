@@ -1,0 +1,65 @@
+@use '../../../styles/variables' as *
+@use '../../../styles/mixins' as *
+
+.footer
+    background-color: $royal-indigo
+    color: #fff
+    padding: 2rem 0
+    text-align: center
+    width: 100%
+    margin-top: 2rem
+
+    &__container
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        margin: 0 auto
+        max-width: 1200px
+
+    &__section
+        flex: 1
+        margin: 1rem
+
+    &__title
+        font-size: 1.5rem
+        margin-bottom: 1rem
+        color: $cotton-candy
+
+    &__list
+        list-style: none
+        padding: 0
+
+    &__item
+        margin: 0.5rem 0
+
+        a
+            color: $cotton-candy
+            text-decoration: none
+            transition: color 0.3s ease
+            padding: 0 0.8rem
+            border-radius: 0.8rem 
+
+
+            &:hover
+                background-color: $cotton-candy
+                color: $amethyst-dream
+
+    &__social
+        display: flex
+        justify-content: center
+
+        a
+            margin: 0 0.5rem
+            transition: all 0.3s ease
+
+            &:hover
+                color: $cotton-candy
+
+    &__contact
+        margin: 0.5rem 0
+        color: $cotton-candy
+
+    &__copyright
+        margin-top: 2rem
+        font-size: 1rem
+        color: $cotton-candy

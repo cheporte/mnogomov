@@ -1,0 +1,18 @@
+@use '../../../styles/variables' as *
+@use '../../../styles/mixins' as *
+
+.cta
+    display: flex
+    flex-direction: column
+
+    &__title
+        font-size: 2rem
+    
+    &__btns
+        display: flex
+
+        +respond-to(tablet)
+            flex-direction: column
+        
+        button
+            margin: 1.2rem
