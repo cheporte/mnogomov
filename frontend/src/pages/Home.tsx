@@ -6,6 +6,7 @@ import Hero from "../components/Home/Hero";
 import Features from "../components/Home/Features";
 import HowItWorks from "../components/Home/HowItWorks";
 import Testimonials from "../components/Home/Testimonials";
+import LanguageOptions from "../components/Home/LanguageOptions/LanguageOptions";
 
 const Home: React.FC = () => {    
     return (
@@ -14,6 +15,7 @@ const Home: React.FC = () => {
             <Features />
             <HowItWorks />
             <Testimonials />
+            <LanguageOptions />
         </div>
     );
 }

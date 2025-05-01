@@ -1,0 +1,26 @@
+@use '../../../styles/variables' as *
+@use '../../../styles/mixins' as *
+
+.language-options
+    padding: 2rem
+    background-color: $cotton-candy
+    text-align: center
+
+    &__title
+        font-size: 2rem
+        margin-bottom: 2rem
+    
+    .subtitle
+        font-size: 1.6rem
+
+    &__langs-carousel, &__langs-to-be
+        width: 100%
+        min-width: 800px
+        margin: 0 auto
+
+        .carousel
+            .carousel-item
+                margin: 1rem 0
+
+                .card-container
+                    margin: 0 auto
