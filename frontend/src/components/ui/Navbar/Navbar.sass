@@ -3,27 +3,50 @@
 
 .navbar
     background-color: $royal-indigo
-    padding: 1rem 2rem
+    padding: 1rem
     display: flex
-    justify-content: space-evenly
+    justify-content: center
     align-items: center
-    width: 100%
+    width: 80%
+    border-radius: 0 0 0.8rem 0.8rem
+    margin-bottom: 1rem
 
     &__container
         display: flex
-        gap: 1rem
+        justify-content: space-evenly
+        width: 100%
+        max-width: 1200px
+        margin: 0 auto
+        flex-wrap: wrap
 
-    button
-        background-color: $amethyst-dream
-        color: #fff
-        border: none
-        padding: 0.5rem 1rem
-        border-radius: 5px
+    &__menu-icon
+        display: none
         cursor: pointer
-        transition: background-color 0.3s ease
 
-        &:hover
-            background-color: $lavender-bliss
+    &__links
+        display: flex
+        gap: 1rem
+        flex-wrap: wrap
+        justify-content: center
+        transition: max-height 0.3s ease
 
-        &:active
-            background-color: $cotton-candy
+    @media (max-width: 768px)
+        &__menu-icon
+            display: block
+
+        &__links
+            display: flex
+            flex-direction: column
+            align-items: center
+            max-height: 0
+            overflow: hidden
+            transition: max-height 0.3s ease
+
+            .nav-btn
+                width: 100%
+
+            &.open
+                max-height: 500px
+
+        &__container
+            justify-content: space-between

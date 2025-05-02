@@ -1,0 +1,57 @@
+@use '../../../styles/variables' as *
+@use '../../../styles/mixins' as *
+
+.language-carousel
+  text-align: center
+
+  &__title
+    font-size: 2rem
+    font-weight: bold
+    margin-bottom: 0.5rem
+
+  &__subtitle
+    font-size: 1.6rem
+    margin-bottom: 1.5rem
+
+  .carousel-wrapper
+    position: relative
+    max-width: 600px
+    margin: 0 auto
+
+    .carousel-item
+      display: flex
+      justify-content: center
+      align-items: center
+
+  .carousel-controls
+    position: absolute
+    top: 110%
+    width: 100%
+    display: flex
+    justify-content: space-between
+    transform: translateY(-50%)
+    pointer-events: none
+
+    .carousel-button
+      background: none
+      border: none
+      cursor: pointer
+      pointer-events: all
+      transition: transform 0.2s ease
+
+      &:hover
+        transform: scale(1.1)
+
+      &--prev
+        margin-left: -2rem
+
+      &--next
+        margin-right: -2rem
+
+@media (max-width: 768px)
+  .language-carousel
+    .carousel-controls
+      .carousel-button
+        svg
+          width: 32px
+          height: 32px

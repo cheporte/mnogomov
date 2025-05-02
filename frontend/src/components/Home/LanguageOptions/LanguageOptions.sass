@@ -2,25 +2,45 @@
 @use '../../../styles/mixins' as *
 
 .language-options
-    padding: 2rem
-    background-color: $cotton-candy
-    text-align: center
 
     &__title
         font-size: 2rem
-        margin-bottom: 2rem
-    
-    .subtitle
-        font-size: 1.6rem
+        margin-bottom: 2.5rem
 
-    &__langs-carousel, &__langs-to-be
-        width: 100%
-        min-width: 800px
-        margin: 0 auto
+    &__carousels
+        display: flex
+        justify-content: center
 
-        .carousel
-            .carousel-item
-                margin: 1rem 0
+        .language-carousel
+            margin-bottom: 4rem
 
-                .card-container
-                    margin: 0 auto
+            .carousel-wrapper
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                .carousel-controls
+                    display: flex
+                    justify-content: center
+                    gap: 1.5rem
+                    margin-bottom: 1rem
+
+                    .carousel-button
+                        background: none
+                        border: none
+                        cursor: pointer
+                        transition: transform 0.3s ease
+
+                        &:hover
+                            transform: scale(1.1)
+
+                        svg
+                            stroke: $amethyst-dream
+                            transition: stroke 0.3s ease
+
+                        &:hover svg
+                            stroke: $lavender-bliss
+
+                .carousel
+                    width: 100%
+                    max-width: 600px
