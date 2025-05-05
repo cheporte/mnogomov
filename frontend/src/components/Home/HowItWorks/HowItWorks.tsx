@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import './HowItWorks.sass';
 
@@ -17,7 +18,9 @@ const HowItWorks: React.FC = () => {
                 <li>Step 3: Practice With Flashcards, Texts and Media</li>
                 <li>Step 4: Track Your Progress</li>
             </ul>
-            <Button className="how-it-works__cta-btn" variant="primary" size="lg">Read More</Button>
+            <Link to="/mnogomov/about">
+                <Button className="how-it-works__cta-btn" variant="primary" size="lg">Read More</Button>
+            </Link>
         </section>
     );
 }

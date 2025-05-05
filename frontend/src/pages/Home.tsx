@@ -14,7 +14,6 @@ import Footer from "../components/ui/Footer";
 const Home: React.FC = () => {    
     return (
         <div id='home-page'>
-            <Navbar />
             <Hero />
             <Features />
             <HowItWorks />
